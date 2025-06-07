@@ -1,8 +1,20 @@
 import React from 'react'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TechnicianDashboard from './pages/TechnicianDashboard';
+import TicketFrom from './common/TicketForm';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import KnowledgeBase from './pages/KnowledgeBase';
 
 function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TicketForm />} />
+        <Route path="/dashboard" element={<TechnicianDashboard />} />
+      </Routes>
+    </BrowserRouter>
+  );	
   const notify = () => toast("ResolveIT UI is live!");
 
   return (
@@ -13,6 +25,9 @@ function App() {
       <ToastContainer />
     </div>
   )
+  <Routes>
+  <Route path="/knowledgebase" element={<KnowledgeBase />} />
+  </Routes>
 }
 
 export default App

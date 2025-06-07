@@ -1,12 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
+input, textarea, select, button {
+  padding: 8px;
+  font-size: 1rem;
 }
+
