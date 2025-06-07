@@ -11,16 +11,16 @@ function App() {
   return (
     <Router>
       <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
-      <h1>ResolveIT Helpdesk System</h1>
-      <p>This is a starter layout for your frontend development.</p>
-      <button onClick={notify}>Test Toast</button>
-      <ToastContainer />
+        <h1>ResolveIT Helpdesk System</h1>
+        <p>This is a starter layout for your frontend development.</p>
+        <button onClick={notify}>Test Toast</button>
+        <ToastContainer />
   
-      <Routes>
-        <Route path="/" element={<TicketForm />} />
-        <Route path="/knowledgebase" element={<KnowledgeBase />}
-        <Route path="/dashboard" element={<TechnicianDashboard />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<TicketForm />} />
+          <Route path="/knowledgebase" element={<KnowledgeBase />}
+          <Route path="/dashboard" element={<TechnicianDashboard />} />
+        </Routes>
       </div>
     </Router>
   );
