@@ -1,13 +1,17 @@
-// src/components/TicketForm.jsx
-import React, { useState } from 'react';
-import { toast } from 'react-toastify';
+import React from 'react'
 
 function TicketForm() {
-  const [formData, setFormData] = useState({
-    title: '',
-    description: '',
-    priority: 'Low'
-  });
+  return (
+    <div>
+      <h2>Submit a Ticket</h2>
+      <form>
+        <input type="text" placeholder="Subject" /><br />
+        <textarea placeholder="Describe your issue..."></textarea><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  )
+}
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -61,4 +65,4 @@ function TicketForm() {
   );
 }
 
-export default TicketForm;
+export default TicketForm
