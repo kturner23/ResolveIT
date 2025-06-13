@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import TicketForm from './pages/TicketForm'
-import KnowledgeBase from './components/KnowledgeBase'
-import TechnicianDashboard from './components/TechnicianDashboard'
+import TicketForm from './Pages/TicketForm'
+import KnowledgeBase from './Components/KnowledgeBase'
+import TechnicianDashboard from './Components/TechnicianDashboard'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
